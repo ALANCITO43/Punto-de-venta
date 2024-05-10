@@ -2,11 +2,12 @@ Montes Carrillo Alan Osvaldo
 Gonzalez Gonzalez Ximena Stefania
 Ensayo de un Modelo-Vista-Controlador
 
+
 Instituto Tecnológico de Tláhuac
 
 Ingeniería en Sistemas Computacionales
 
-Grupo: 8S2. Programación web PHP con MVC
+Grupo: 8S2. Desarrollo de Aplicaciones Web
 
 29 de abril de 2024
 
@@ -22,25 +23,25 @@ Modelo-Vista-Controlador (MVC) 3
 
 Organización de Archivos 4
 
-Catálogo de Vehículos 5
+Gestión de Productos 5
 
-Descripción del Código PHP para Cars.php 6
+Descripción del Código PHP para Products.php 6
 
-Tarifas Transparentes 7
+Punto de Venta 7
 
-Descripción del Código PHP para Pricing.php 8
+Descripción del Código PHP para PointOfSale.php 8
 
-Gestión de Cuentas de Usuario 9
+Gestión de Inventarios 9
 
-Descripción del Código PHP para Login.php 10
+Descripción del Código PHP para Inventory.php 10
 
-Formulario de Contacto 11
+Gestión de Cuentas de Usuario 11
 
-Descripción del Código para Contact.php 12
+Descripción del Código PHP para Login.php 12
 
-Gestión de Automóviles 13
+Gestión de Ventas 13
 
-Descripción del Código PHP para Vehiculos.php 14
+Descripción del Código PHP para Sales.php 14
 
 Conclusiones 15
 
@@ -48,74 +49,79 @@ Referencias 16
 
 Resumen Ejecutivo
 
-Este análisis detalla el diseño y desarrollo de una página web dedicada al alquiler de automóviles, destacando su relevancia para la experiencia del usuario y su influencia en el éxito comercial. Se examina la implementación del modelo MVC (Modelo-Vista-Controlador) con PHP para estructurar el proyecto, asegurando una arquitectura dinámica, robusta y fácil de mantener. Se exploran las funcionalidades esenciales, como el catálogo de vehículos, tarifas transparentes, gestión de cuentas de usuario y formulario de contacto, con énfasis en la accesibilidad, seguridad y confianza para garantizar una experiencia positiva para el cliente.
+Este análisis detalla el diseño y desarrollo de una aplicación web de punto de venta, resaltando su importancia para la gestión eficiente de transacciones comerciales y su impacto en la experiencia del usuario. Se examina la implementación del modelo MVC (Modelo-Vista-Controlador) con PHP para estructurar el proyecto, asegurando una arquitectura dinámica, escalable y fácil de mantener. Se exploran las funcionalidades esenciales, como la gestión de productos, punto de venta, inventarios, cuentas de usuario y ventas, con énfasis en la usabilidad, seguridad y rendimiento para garantizar una experiencia satisfactoria tanto para los clientes como para los administradores.
 
 Introducción
 
-En el contexto actual, la presencia en línea es vital para cualquier empresa que busque expandirse y llegar a una audiencia más amplia. La creación de una página web para servicios de alquiler de autos se convierte en una estrategia fundamental para posicionarse en el mercado y ofrecer una experiencia completa y accesible a los clientes. Este documento introduce el proyecto de desarrollo de una página web para un servicio de alquiler de automóviles, utilizando el modelo MVC (Modelo-Vista-Controlador) con PHP. Exploraremos los fundamentos de este modelo arquitectónico y cómo aplicarlo efectivamente para crear una plataforma web dinámica y fácil de mantener.
+En el entorno empresarial actual, la eficacia y agilidad en la gestión de las operaciones comerciales son cruciales para el éxito. La creación de una aplicación web de punto de venta se convierte en una herramienta fundamental para optimizar los procesos de venta, control de inventario y gestión de clientes. Este documento introduce el proyecto de desarrollo de una aplicación web de punto de venta, utilizando el modelo MVC (Modelo-Vista-Controlador) con PHP. Se explorarán los principios fundamentales de este modelo arquitectónico y cómo se aplican para construir una plataforma dinámica y eficiente para la gestión comercial.
 
 Desarrollo
 
 Modelo-Vista-Controlador (MVC)
 
-El modelo MVC es un patrón de diseño de software que separa la lógica de negocios de su visualización, facilitando la implementación de interfaces de usuario, datos y control. En este proyecto, se estructura de manera clara, con archivos organizados en las carpetas de controladora, modelo y vista, asegurando una separación eficiente de las responsabilidades.
+El modelo MVC es un patrón de diseño de software que separa la lógica de negocios de su presentación, facilitando la modularidad y mantenibilidad del código. En este proyecto, se implementa de manera clara y organizada, con archivos distribuidos en las carpetas de controladora, modelo y vista, garantizando una separación efectiva de las responsabilidades y una estructura escalable.
 
 Organización de Archivos
 
-Dentro de la estructura MVC, se distribuyen los archivos de manera coherente, con las carpetas de controladora, modelo y vista claramente definidas. Esto permite una gestión eficiente del código y una fácil escalabilidad del proyecto.
+Dentro de la estructura MVC, se establece una organización coherente de archivos, con las carpetas de controladora, modelo y vista claramente definidas. Esto permite una gestión eficiente del código y una fácil expansión de la aplicación a medida que se añaden nuevas funcionalidades.
 
-Catálogo de Vehículos
+Gestión de Productos
 
-Se presenta un catálogo completo de vehículos disponibles para alquiler, con información detallada, imágenes y disponibilidad. Esto proporciona a los usuarios una visión completa de las opciones disponibles y facilita el proceso de selección y reserva.
+Se presenta una interfaz para la gestión completa de productos, incluyendo la adición, edición, eliminación y búsqueda de productos en el inventario. Esto proporciona a los administradores un control total sobre el catálogo de productos y facilita la actualización de la información de inventario.
 
-Descripción del Código PHP para Cars.php
+Descripción del Código PHP para Products.php
 
-El archivo Cars.php define un controlador que gestiona la visualización de la página principal y los detalles de vehículos específicos. Mediante el uso de métodos específicos, se obtienen los datos necesarios del modelo y se renderiza la vista correspondiente para una experiencia de usuario óptima.
+El archivo Products.php define un controlador que gestiona la lógica de negocio relacionada con la gestión de productos. Se implementan métodos para interactuar con el modelo de datos y se renderiza la vista correspondiente para mostrar la interfaz de gestión de productos de manera intuitiva.
 
-Tarifas Transparentes
+Punto de Venta
 
-Se proporcionan herramientas para que los clientes puedan calcular las tarifas de alquiler de forma transparente, incluyendo costos adicionales como seguros, impuestos y cargos por servicios extras. Esto promueve la transparencia y la confianza del cliente en el servicio.
+Se desarrolla una interfaz de punto de venta intuitiva y eficiente, que permite a los usuarios procesar transacciones de manera rápida y precisa. Se incluyen funcionalidades como la búsqueda de productos, cálculo de precios y gestión de métodos de pago para agilizar el proceso de venta.
 
-Descripción del Código PHP para Pricing.php
+Descripción del Código PHP para PointOfSale.php
 
-El archivo Pricing.php define un controlador que gestiona la visualización de las tarifas de alquiler de vehículos. Se obtienen los datos del modelo y se renderiza la vista correspondiente para mostrar de manera clara y detallada las tarifas disponibles.
+El archivo PointOfSale.php define un controlador que gestiona la lógica de negocio relacionada con el punto de venta. Se implementan métodos para procesar transacciones, actualizar inventarios y generar recibos para los clientes de manera eficiente.
+
+Gestión de Inventarios
+
+Se establece un sistema robusto para la gestión de inventarios, que permite a los administradores realizar un seguimiento detallado de las existencias de productos, recibir notificaciones de niveles bajos y realizar ajustes de inventario según sea necesario. Esto garantiza una gestión eficiente de los recursos y evita la falta de existencias.
+
+Descripción del Código PHP para Inventory.php
+
+El archivo Inventory.php define un controlador que gestiona la lógica de negocio relacionada con la gestión de inventarios. Se implementan métodos para actualizar las existencias de productos, generar informes de inventario y recibir notificaciones de niveles bajos para mantener un control preciso de los productos disponibles.
 
 Gestión de Cuentas de Usuario
 
-Se permite a los clientes registrarse, iniciar sesión y administrar sus cuentas de usuario, incluyendo el historial de reservas, preferencias de contacto y datos de facturación. Esto mejora la experiencia del usuario y fomenta la fidelización.
+Se permite a los usuarios registrarse, iniciar sesión y administrar sus cuentas, incluyendo la gestión de información personal, historial de transacciones y preferencias de notificación. Esto mejora la experiencia del usuario y fomenta la fidelización de clientes.
 
 Descripción del Código PHP para Login.php
 
-El archivo Login.php define un controlador que gestiona la autenticación de usuarios y la administración de sesiones. Se valida la información de inicio de sesión y se proporciona acceso seguro a las cuentas de usuario.
+El archivo Login.php define un controlador que gestiona la autenticación de usuarios y la administración de sesiones. Se implementan métodos para validar credenciales de inicio de sesión, proteger las sesiones de usuario y proporcionar acceso seguro a las cuentas de usuario.
 
-Formulario de Contacto
+Gestión de Ventas
 
-Se incluye un formulario de contacto para que los usuarios puedan comunicarse fácilmente con la empresa. Esto facilita la interacción con los clientes y promueve la atención al cliente eficiente.
+Se desarrolla un sistema completo para la gestión de ventas, que incluye la generación de informes de ventas, seguimiento de métricas clave y análisis de tendencias comerciales. Esto proporciona a los administradores una visión clara del rendimiento del negocio y ayuda en la toma de decisiones estratégicas.
 
-Descripción del Código para Contact.php
+Descripción del Código PHP para Sales.php
 
-El archivo Contact.php define una página web con un formulario de contacto y detalles de contacto adicionales. Se utiliza JavaScript para validar y enviar el formulario de manera efectiva, garantizando una comunicación fluida entre la empresa y los clientes.
-
-Gestión de Automóviles
-
-Se establece un sistema eficiente para gestionar la información de los vehículos, permitiendo a los agentes administrar listados, fotos, precios y detalles de manera eficiente. Esto optimiza el proceso de gestión y mejora la eficiencia operativa.
-
-Descripción del Código PHP para Vehiculos.php
-
-El archivo Vehiculos.php define un controlador que gestiona la gestión de vehículos, incluyendo la visualización, edición, eliminación y búsqueda de vehículos en la base de datos. Se establecen métodos claros y eficientes para garantizar una gestión efectiva de la información.
+El archivo Sales.php define un controlador que gestiona la lógica de negocio relacionada con la gestión de ventas. Se implementan métodos para registrar transacciones, generar informes de ventas y analizar datos comerciales para optimizar el rendimiento del negocio.
 
 Conclusiones
 
-En conclusión, la creación de una página web para servicios de alquiler de automóviles es una inversión importante que puede impulsar el crecimiento del negocio y mejorar la experiencia del cliente. Mediante el uso del modelo MVC con PHP y la implementación de funcionalidades clave, como catálogos de vehículos, tarifas transparentes y gestión de cuentas de usuario, se puede proporcionar una plataforma web dinámica y eficiente que satisfaga las necesidades de los clientes y promueva el éxito comercial.
+En conclusión, el desarrollo de una aplicación web de punto de venta es una inversión crucial que puede impulsar la eficiencia operativa y mejorar la experiencia del cliente. Mediante el uso del modelo MVC con PHP y la implementación de funcionalidades clave, como gestión de productos, punto de venta, inventarios y ventas, se puede crear una plataforma dinámica
+
+ y escalable que satisfaga las necesidades comerciales y promueva el crecimiento a largo plazo.
 
 Referencias
 
-[1] Redacción, A. (2023, 5 de junio). ¿Cómo funciona el alquiler de autos? Nos Mueves Tú.
-[2] La nueva forma de rentar un auto - Mex Rent a Car.
-[3] México, ER. ¿Cómo alquilar un auto en México? | Empresa México. Enterprise Rent-A-Car.
-[4] Políticas de alquiler de autos. Políticas De Renta De Autos.
-[5] Redacción. (2024, 18 de enero). ¿Cómo funciona el depósito de alquiler de autos? Nos Mueves Tú.
-[6] PHP: ¿Qué es PHP? -
+[1] W3Schools. (s/f). PHP Tutorial. Recuperado de https://www.w3schools.com/php/
+
+[2] PHP.net. (s/f). PHP: Documentation. Recuperado de https://www.php.net/docs.php
+
+[3] Laracasts. (s/f). Laravel From Scratch. Recuperado de https://laracasts.com/series/laravel-8-from-scratch
+
+[4] Stack Overflow. (s/f). Preguntas y respuestas sobre PHP. Recuperado de https://stackoverflow.com/questions/tagged/php
+
+[5] Codecademy. (s/f). Learn PHP. Recuperado de https://www.codecademy.com/learn/learn-php
 
  Manual.
 [7] PHP: Iteración de objetos - Manual.
